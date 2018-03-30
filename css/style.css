@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family: 'Roboto', 'Segoe UI Light', sans-serif;
+	font-weight: 100;
+	font-size: 12px;
+	vertical-align: top;
+}
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	/*overflow-y: hidden;*/
+	/*overflow-x: hidden;*/
+}
+#info, #map {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+#info {
+	position: relative;
+}
+#info .inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*border: thin dashed red;*/
+	text-align: center;
+}
+#info p {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+#info .title {
+	font-size: 50px;
+	/*text-transform: uppercase;*/
+}
+#info .author {
+	font-size: 14px;
+	margin-top: 20px;
+	font-weight: 300;
+	float: right;
+}
+#info .social {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 20px;
+}
+#info a {
+	text-decoration: none;
+}
+#info .social img {
+	width: 22px;
+	margin: 0 2px;
+	transition: 0.3s;
+	filter: invert(50%);
+}
+#info .social a:hover > img {
+	filter: invert(0%);
+}
+#tt {
+	position: absolute; 
+	display: block; 
+	letter-spacing: 2px;
+	line-height: 1; 
+}
+#ttcont {
+	display: block;
+	line-height: 1; 
+	padding: 5px 13px 5px 15px; 
+	border-radius: 25px; 
+	background: #000; 
+	color: #FFF; 
+	border: thin solid white;
+}
+.gmnoprint a, .gmnoprint span {
+	display: none;
+}
+.gmnoprint div {
+	background: none !important;
+}
+a[href^="http://maps.google.com/maps"] {
+	display:none !important;
+}
+a[href^="https://maps.google.com/maps"] {
+	display:none !important;
+}
+img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"], a[href^="http://maps.google.com/maps"] {
+	display: none !important;
+}
