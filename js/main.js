@@ -138,3 +138,11 @@ function initMap() {
         });
 	});
 }
+
+$(window).on('load', function() {
+	setTimeout(function() {
+		$('html, body').animate({
+			scrollTop: $('#map').offset().top
+		}, 2000);
+	}, 1000);
+});
